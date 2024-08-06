@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git Clone') {
             steps {
-                git 'https://github.com/c4clouds/maven-helloworld.git'
+                git 'https://github.com/balar2207/maven-sample.git'
             }
             
         }
@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploying to Tomcat') {
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'jenkins', path: '', url: 'http://34.125.110.229:8080')], contextPath: 'devops123', war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'jenkins', path: '', url: 'http://192.168.1.57:8080')], contextPath: 'devops123', war: '**/*.war'
             }
             
         }
