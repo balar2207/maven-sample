@@ -5,7 +5,7 @@
         <artifactId>sample-war</artifactId>
         <version>1.1.9</version>
         <packaging>war</packaging>
-        <name>sample Web Application</name>
+        <name>Hello World Web Application</name>
         <description>Simplest possible Java Webapp</description>
 
     <distributionManagement>
